@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="menu.js"></script>
+    <link href="jquery-ui.min.css" type="text/css" rel="stylesheet">
+<style>
+   .ui-menu:after{
+       content:".";
+       display:block;
+       visibility:hidden;
+       line-height:0;
+       height:0;
+   }
+    .ui-menu .ui-menu-item{
+    dispaly:inline-block;
+    float:left;
+    margin:0;
+        padding:10px;
+    width:auto;}
+</style>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <a href="#">Java</a>
+
+    <ul><li><a href="#">JavaSE</a></li>
+        <li><a href="#">JavaME</a></li>
+        <li><a href="#">JavaEE</a></li>
+    </ul>
+    </li>
+
+    <li>PHP</li>
+    <li>c++</li>
+    <li>C</li>
+</ul>
+
+</body>
+</html>
