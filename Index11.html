@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数传参</title>
+    <style>
+        body,p{
+            margin:0;
+            padding:0;
+        }
+        body{
+            color:#333;
+            font:12px/1.5 Tahoma;
+            padding-top:10px;
+        }
+        #outer{
+            width:300px;
+            margin:0 auto;
+        }
+
+        #box2{
+            color:#fff;
+            width:200px;
+            height:300px;
+            padding:10px;
+            background:#000;
+            margin:0 auto;
+        }
+        input{
+            padding:3px;
+            font-family:inherit;
+            border:1px solid;
+        }
+    </style>
+
+    <script>
+        var changeStyle=function(elem,name,value){
+            elem.style[name]=value
+        }
+
+
+        window.onload=functoin(){
+        var nvalue=document.getElementById("in1");
+        var ovalue=document.getElementById("in2");
+        var b1=document.getElementById("btn1");
+        var b2=document.getElementById("btn2");
+        var odiv=document.getElementById("box2");
+            b1.onclick=function(){
+                changeStyle(odiv, nvalue.value,ovalue.value)
+
+            },
+            b2.onclick=function(){
+                odiv.removeAtrribute("style")
+
+            }
+        }
+    </script>
+</head>
+<body>
+      <div id="outer" >
+          <form>
+              <p>属性名：<input id="in1" type="text" /></p>
+              <p>属性值:<input  id="in2" type="text" /></p></br>
+              <button id="btn1">确定</button>
+              <button id="btn2">重置</button>
+          </form>
+      </div>
+       <div id="box2">
+    在上方输入框输入"属性名"及"属性值"，</br>点击确定按钮查看效果
+       </div>
+</body>
+</html>

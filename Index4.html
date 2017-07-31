@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change DIV into Red</title>
+    <style>
+    #content{
+        width:330px;
+        height:100px;
+        margin:10px auto;
+    }
+        #content div{
+            width:100px;
+            height:100px;
+            background-color: black;
+
+            margin:0 5px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+
+<center><button onclick="change()"()>点击将DIV变成红色</button></center>
+            <div id="content">
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        </div>
+</body>
+<script>
+    function change(){
+        var p=document.getElementsByTagName("div");
+        for(var i=0;i<p.length;i++){
+        p[i].style.background="red";
+        alert("success");}
+
+    }</script>
+</html>

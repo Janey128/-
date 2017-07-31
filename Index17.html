@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框 全选或者全不选</title>
+    <style>
+        body{font:12px/1.5 Tahoma;}
+        body,dl,dt,dd,p{
+            margin:0;
+            padding:0;
+        }
+        label,input,a{
+            vertical-align:middle;
+        }
+        label{
+            padding:0 10px 0 5px;
+        }
+        dl{
+            width:120px;
+            border:1px solid black;
+            background-color: #cccccc;
+            margin:10px auto;
+            padding: 10px 5px;
+        }
+        dt{
+            font-size:12px;
+            float:left;
+            padding-bottom:10px;
+            bodrder-bottom:1px solid #666;
+        }
+        dt.a{
+            color:blue;
+
+        }
+        a:hover{
+            color:red;
+        }
+        p{ float:left;
+        margin-top: 10px;}
+
+
+    </style>
+    <script>
+        window.onload=function(){
+
+
+        }
+    </script>
+</head>
+<body>
+
+          <dl>
+              <dt> <input type="checkbox" id="checkall"><label>全选</label><a href="javascript:">反选</a> </dt>
+               <dd>
+                <p><input type="checkbox" name="item"><label>选项（一）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（二）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（三）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（四）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（五）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（六）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（七）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（八）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（九）</label></p>
+                <p><input type="checkbox" name="item"><label>选项（十）</label></p>
+               </dd>
+          </dl>
+
+        <center>1、切换全选/全不选文字；2、根据选中个数更新全选框状态；</center>
+
+</body>
+</html>

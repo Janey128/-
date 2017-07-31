@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标移入移除改变样式</title>
+    <style>
+        #box{
+        height:200px;
+        width:200px;
+        background-color: black;
+        left:50%;}
+        #box1{
+            height:180px;
+            width:180px;
+
+        }
+    </style>
+    <script>
+        function onmouse(){
+     var a=document.getElementsByTagName("p");
+     var b=document.getElementsByid("box");
+     a.style.color="red";
+     b.style.padding.color="grey";
+     b.style.margin.color="red";
+alert("success");
+        }
+    </script>
+    </head>
+    <body>
+         <div id="box" onmouseover="onmouse()">
+             <div id="box1">
+             <p style="color: white;">鼠标移入改变样式，鼠标移出回复。</p>
+             </div>
+         </div>
+
+</body>
+</html>

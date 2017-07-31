@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮显示下拉选项</title>
+    <style>
+   #ime{
+       height:400px;
+       width:400px;
+       border:1px solid;
+       margin-top:5px;
+       background-color: coral;
+       display:none;
+   }
+        #ime li{
+            width:100%;
+            line-height:24px;
+            display:inline-block;
+            vartical-align:top;
+
+        }
+        #ime li a{
+            color:greenyellow;
+            padding:0 5px;
+            display:block;
+            text-decoration:none;
+        }
+
+    </style>
+    <script>
+ window.onload=function(){
+     var btn=document.getElementsByTagName("button")
+     var s=document.getElementById("ime");
+     var c=document.getElementById("close");
+       btn.onclick=function(){
+           s.style.display="block"
+
+       };
+       c.onclick=function()
+       {
+       s.style.display="none"}
+ }
+ </script>
+</head>
+<body>
+<div id="outer">
+     <input  type="button" value="输入法"/>
+    <ul id="ime">
+        <li><a href="">拼音</a></li>
+        <li><a href="">手写</a></li>
+        <li id="close"><a href="">关闭</a></li>
+    </ul>
+
+</div>
+
+</body>
+</html>
